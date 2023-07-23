@@ -13,10 +13,9 @@ html {
     min-height: 100%;
   }
   
-  body {
-    margin-bottom: 60px;
-  }
+
   
+  /*For Order Items*/
   .card {
     width:700px;
       margin-top: 90px;
@@ -43,23 +42,179 @@ html {
   }
   
   .item-img img {
-      width: 200px; /* Set the desired width */
+      width: 120px; /* Set the desired width */
       height: auto;
+      padding:10px;
   }
   .card-group {
-      display: flex;
+      
       flex-direction: column;
+      margin-right:20px;
   }
   
   .proceed-button {
-      border: 1px solid #EECF0F;
-      background-color: #EECF0F;
+      
+      background-color: #E3A811;
       width: 130px;
       margin-top: 30px;
-      padding: 5px;
-      font-size: 24px;
-      border-radius: 10px;
-      margin-left: 560px;
+      font-size: 20px;
+      margin-left: 200px;
+      color:black;
+      cursor: pointer;
+      padding: 10px 20px;
+    border-radius: 5px;
+    
   }
+
   
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    overflow-x: hidden;
+}
+
+/*For CRUD Menu*/
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#E3A811;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+}
+
+button[type="button"] {
+    background-color: #E3A811;
+}
+
+button[type="button"]:last-child {
+    background-color: #f44336;
+}
+
+textarea {
+  width: 95%;
+  height:50px;
+}
+/* Dashboard*/
+
+
+.container-dashboard {
+    display: flex;
+}
+
+.side-nav {
+    background-color: #E3A811;
+    color: black;
+    padding: 10px;
+    height:500px;
+   
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 5px;
+    width:150px;
+
+}
+
+.side-nav li {
+    margin-bottom: 10px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.side-nav a:hover {
+    background-color: #ffffff;
+    border-radius:10px;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.overview{
+    display:flex;
+}
+
+.card-dash {
+    background-color: #000000;
+    padding: 20px;
+    height:auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 0 calc(5% - 20px);
+    color:#6E6B7B;
+    
+}
+.chart {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0; /* Reset margin for footer */
+}
