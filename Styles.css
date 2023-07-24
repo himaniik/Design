@@ -16,17 +16,24 @@ html {
 
   
   /*For Order Items*/
-  .card {
-    width:700px;
-      margin-top: 90px;
-      border: 1px solid black;
-      padding: 20px;
-      border-radius: 20px;
-      margin-bottom: 50px;
-      margin-left:330px;
-      margin-right:100px;
-  }
-  
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.card {
+    width: 600px;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
   .card-header {
       display: flex;
       justify-content: space-between;
@@ -35,7 +42,7 @@ html {
   .card-body {
       border: 1px solid black;
       border-radius: 20px;
-      background-color: #f5f1eb;
+      background-color: #ffffff;
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
@@ -65,7 +72,6 @@ html {
     border-radius: 5px;
     
   }
-
   
   body {
     font-family: Arial, sans-serif;
@@ -75,6 +81,8 @@ html {
     margin-bottom: 60px;
     overflow-x: hidden;
 }
+
+
 
 /*For CRUD Menu*/
 .container {
@@ -146,13 +154,15 @@ textarea {
 
 .container-dashboard {
     display: flex;
+    margin: 0;
+    min-height: 50vh;
 }
 
 .side-nav {
     background-color: #E3A811;
     color: black;
     padding: 10px;
-    height:500px;
+    height:700px;
    
 }
 
@@ -183,7 +193,10 @@ main {
     padding: 20px;
     flex: 1;
 }
-
+.dashboard-body {
+    margin: 0;
+    padding: 0;
+}
 section {
     margin-bottom: 20px;
 }
@@ -216,5 +229,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 0; /* Reset margin for footer */
+    margin:0;
 }

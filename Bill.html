@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+    <title>Foodiefy - A Delightful Culinary Experience</title>
+    <style>
+        /* For Order Items */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 60px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .card {
+            width: 600px;
+            margin-top: 50px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .card-body {
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item-img img {
+            width: 120px;
+            height: auto;
+            padding: 10px;
+        }
+
+        .card-group {
+            flex-direction: column;
+            margin-right: 20px;
+            padding:10px;
+        }
+
+        .proceed-button {
+            background-color: #E3A811;
+            width: 130px;
+            margin-top: 30px;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            color: black;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .payment {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .payment input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #E3A811;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #555;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+   
+       
+        <div class="card">
+            <div class="card-header">
+                <h2>Bill</h2>
+                <h2>Table 1</h2>
+            </div>
+
+            <div class="card-body">
+                <div class="item-img">
+                    <img src="images/f1.png" alt="Delicious Pizza" />
+                </div>
+
+                <div class="card-group">
+                    <h3>Delicious Pizza</h3>
+                    <h3>Price: 300</h3>
+                    <h3>Quantity: 1</h3>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="item-img">
+                    <img src="images/f2.png" alt="Burger" />
+                </div>
+                <div class="card-group">
+                    <h3>Burger</h3>
+                    <h3>Price: 400</h3>
+                    <h3>Quantity: 1</h3>
+                </div>
+            </div>
+            <div class="payment">
+                <h2>Payment:</h2>
+                <input type="radio" name="payment-method">Cash
+                <input type="radio" name="payment-method">Bank
+                <input type="radio" name="payment-method">Khalti
+            </div>
+            <button class="proceed-button">Proceed</button>
+        </div>
+  
+</body>
+
+</html>
